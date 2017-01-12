@@ -20,9 +20,9 @@ gulp.task('icons', function() {
 
 	var options = {
 		mode: {
-			inline: true,
 			symbol: {
 				dest: '',
+				inline: true,
 				sprite: 'icons.hbs'
 			}
 		},
@@ -33,6 +33,9 @@ gulp.task('icons', function() {
 		},
 		svg: {
 			doctypeDeclaration: false,
+			// rootAttributes: {
+			// 	class: 'structural'
+			// },
 			xmlDeclaration: false
 		}
 	};
