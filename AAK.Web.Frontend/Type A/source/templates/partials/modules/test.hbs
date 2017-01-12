@@ -1,0 +1,15 @@
+<div class="module teaser{{#if moduleClass}} {{moduleClass}}{{/if}}"{{#if moduleId}} id="{{moduleId}}"{{/if}}>
+	{{#if moduleTitle}}
+		<div class="module__header{{#if moduleBorder}} module__header--has-border{{/if}}">
+			<h{{moduleTitleLevel}} class="module__title">{{moduleTitle}}</h{{moduleTitleLevel}}>
+		</div>
+	{{/if}}
+	<div class="module__content">
+		<div class="teaser__img" style="background-image: url('{{img}}')"></div>
+		<div class="teaser__body">
+			<h{{headingLevel}} class="heading--level-4">{{heading}}</h{{headingLevel}}>
+			<p class="teaser__text">{{text}}</p>
+			<a class="btn btn--is-primary" href="#">{{link}}</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,323 @@
+{
+	"currentTheme": "aak",
+	"themes": {
+		"aak": {
+			"name": "aak"
+		}
+	},
+	"footer": {
+		"modules": [
+			{
+				"module": "Categories",
+				"moduleBorder": false,
+				"moduleClass": "",
+				"moduleId": "",
+				"moduleTemplate": "categories",
+				"moduleTitle": "Categories",
+				"moduleTitleLevel": 3,
+
+				"items": [
+					{
+						"title": "Your Industry",
+						"link": "section.html"
+					},
+					{
+						"title": "Our Solution",
+						"link": "section.html"
+					},
+					{
+						"title": "Investors",
+						"link": "section.html"
+					},
+					{
+						"title": "Careers",
+						"link": "section.html"
+					},
+					{
+						"title": "Responsible Growth",
+						"link": "section.html"
+					}
+				]
+			},
+			{
+				"module": "Categories",
+				"moduleBorder": false,
+				"moduleClass": "",
+				"moduleId": "",
+				"moduleTemplate": "categories",
+				"moduleTitle": "Categories",
+				"moduleTitleLevel": 3,
+
+				"items": [
+					{
+						"title": "Your Industry",
+						"link": "section.html"
+					},
+					{
+						"title": "Our Solution",
+						"link": "section.html"
+					},
+					{
+						"title": "Investors",
+						"link": "section.html"
+					},
+					{
+						"title": "Careers",
+						"link": "section.html"
+					},
+					{
+						"title": "Responsible Growth",
+						"link": "section.html"
+					}
+				]
+			},
+			{
+				"module": "Categories",
+				"moduleBorder": false,
+				"moduleClass": "",
+				"moduleId": "",
+				"moduleTemplate": "categories",
+				"moduleTitle": "Categories",
+				"moduleTitleLevel": 3,
+
+				"items": [
+					{
+						"title": "Your Industry",
+						"link": "section.html"
+					},
+					{
+						"title": "Our Solution",
+						"link": "section.html"
+					},
+					{
+						"title": "Investors",
+						"link": "section.html"
+					},
+					{
+						"title": "Careers",
+						"link": "section.html"
+					},
+					{
+						"title": "Responsible Growth",
+						"link": "section.html"
+					}
+				]
+			},
+			{
+				"module": "Share",
+				"moduleClass": "",
+				"moduleBorder": false,
+				"moduleId": "",
+				"moduleTemplate": "share",
+				"moduleTitle": "Follow Us",
+				"moduleTitleLevel": 3,
+
+				"items": [
+					{
+						"title": "facebook",
+						"link": "http://www.facebook.com"
+					},
+					{
+						"title": "twitter",
+						"link": "http://www.twitter.com"
+					},
+					{
+						"title": "linkedin",
+						"link": "http://www.linkedin.com"
+					},
+					{
+						"title": "pinterest",
+						"link": "http://www.pinterest.com"
+					},
+					{
+						"title": "mail",
+						"link": "mailto:info@peab.se"
+					},
+					{
+						"title": "google-plus",
+						"link": "https://plus.google.com"
+					}
+				]
+			}
+		]
+	},
+	"nav": [
+		{
+			"alias": "section.html",
+			"label": "Your Industry",
+			"children": [
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry",
+					"children": [
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						}
+					]
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				}
+			]
+		},
+		{
+			"alias": "section.html",
+			"label": "Our Solution",
+			"children": [
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry",
+					"children": [
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						}
+					]
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				}
+			]
+		},
+		{
+			"alias": "section.html",
+			"label": "Investors"
+		},
+		{
+			"alias": "section.html",
+			"label": "Careers",
+			"children": [
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry",
+					"children": [
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						},
+						{
+							"alias": "subpage.html",
+							"label": "Your Industry"
+						}
+					]
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				},
+				{
+					"alias": "subpage.html",
+					"label": "Your Industry"
+				}
+			]
+		},
+		{
+			"alias": "section.html",
+			"label": "Responsible Growth"
+		},
+		{
+			"alias": "section.html",
+			"label": "Media"
+		},
+		{
+			"alias": "section.html",
+			"label": "About Us"
+		},
+		{
+			"alias": "section.html",
+			"label": "Contacts Us"
+		}
+	],
+	"navSupp": [
+		{
+			"alias": "",
+			"icon": "menu",
+			"label": ""
+		},
+		{
+			"alias": "section.html",
+			"icon": "",
+			"label": "Find Your Product"
+		},
+		{
+			"alias": "section.html",
+			"icon": "",
+			"label": "Our Responsibility"
+		},
+		{
+			"alias": "section.html",
+			"icon": "",
+			"label": "Thinking Ahead"
+		},
+		{
+			"alias": "",
+			"icon": "mail",
+			"label": ""
+		},
+		{
+			"alias": "",
+			"icon": "globe",
+			"label": ""
+		},
+		{
+			"alias": "",
+			"icon": "search",
+			"label": ""
+		}
+	]
+}

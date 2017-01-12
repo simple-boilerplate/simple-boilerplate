@@ -1,0 +1,70 @@
+/*
+ * Module 2
+ */
+.module-2 {
+
+	/**
+	 * Screen
+	 */
+	@media screen {
+		background: var($theme-color-lighter);
+
+		&_modifier-name {
+			border: 0;
+		}
+
+		&__child {
+			border: 0;
+		}
+
+		/**
+		 * Modifiers (Local Scope)
+		 */
+		&_local-scope & {
+
+			&__child {
+				border: 0;
+			}
+		}
+
+		/**
+		 * Modifiers (Global Scope)
+		 */
+		@nest .global-scope & {
+			border: 0;
+
+			&__child {
+				border: 0;
+			}
+		}
+
+		/**
+		* Breakpoints
+		*/
+		@media ($breakpoint-medium) {
+			border: 0;
+
+			&__child {
+				border: 0;
+			}
+
+			@nest .global-scope & {
+				border: 0;
+			}
+
+			&_local-scope & {
+
+				&__child {
+					border: 0;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Print
+	 */
+	@media print {
+		display: none;
+	}
+}

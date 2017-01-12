@@ -1,0 +1,19 @@
+//
+// Breakpoints
+//
+$breakpoint-medium: ('min-width: 768px');
+
+/**
+ * Colors
+ */
+$color-black: #000;
+$color-red: #900;
+$color-red-light: lighten($color-red, 25%);
+$color-red-lighter: lighten($color-red, 50%);
+$color-white: #fff;
+
+/**
+ * Theme
+ */
+$theme-color: $color-red-lighter; /* Base theme color */
+$theme-color-lighter: $theme-color;

@@ -1,0 +1,14 @@
+<div class="sec{{#if section.class}} sec-{{section.class}}{{/if}}"{{#if section.id}} id="{{section.id}}"{{/if}}>
+	<div class="sec__inner">
+		{{#if section.title}}
+			<div class="sec__hd">
+				<h{{section.title.level}} class="sec__title{{#if section.title.style}} e-heading_level_{{section.title.style}}{{/if}}">{{section.title.text}}</h{{section.title.level}}>
+			</div>
+		{{/if}}
+		<div class="sec__ct">
+			{{#each section.modules}}
+				{{> module}}
+			{{/each}}
+		</div>
+	</div>
+</div>

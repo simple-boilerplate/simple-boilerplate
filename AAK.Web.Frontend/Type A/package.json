@@ -1,0 +1,30 @@
+{
+  "name": "AAK",
+  "version": "1.0.0",
+  "description": "Gulp setup for AAK (Type A)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "DigitasLBi",
+  "license": "",
+  "devDependencies": {
+    "assemble": "^0.17.1",
+    "autoprefixer": "^6.6.1",
+    "browser-sync": "^2.11.1",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-extname": "^0.2.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^3.3.0",
+    "gulp-svg-sprite": "^1.3.6",
+    "gulp-util": "^3.0.7",
+    "handlebars-helpers": "^0.7.5",
+    "merge": "^1.2.0",
+    "require-dir": "^0.3.0"
+  }
+}

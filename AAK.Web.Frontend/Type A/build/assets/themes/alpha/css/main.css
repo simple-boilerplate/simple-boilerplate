@@ -1,0 +1,175 @@
+/**
+ * Abstracts
+ */
+/**
+ * Colors
+ */
+/**
+ * Theme
+ */
+/* Base theme color */
+/**
+ * Base
+ */
+/**
+ * General
+ *
+ * @group base
+ */
+/* **************************** @media all ********************************** */
+
+/* **************************** @media screen ******************************* */
+
+/* **************************** @media print ******************************** */
+
+/**
+ * Modules
+ */
+/*
+ * Module 1
+ */
+.module-1 {
+  /**
+	 * Screen
+	 */
+  /**
+	 * Print
+	 */
+}
+
+/*
+ * Module 2
+ */
+.module-2 {
+  /**
+	 * Screen
+	 */
+  /**
+	 * Print
+	 */
+}
+
+/*
+ * Module 1
+ */
+
+@media all {
+  body {
+    background: #fff;
+    color: #000
+  }
+}
+
+@media screen {
+  body {
+    border: 0;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+    color: #900/**
+		* Breakpoints
+		*/
+  }
+  .module-1 {
+    background: var(#ff9999)/**
+		 * Modifiers (Local Scope)
+		 *//**
+		 * Modifiers (Global Scope)
+		 *//**
+		* Breakpoints
+		*/
+  }
+  .module-1_modifier-name {
+    border: 0
+  }
+  .module-1__child {
+    border: 0
+  }
+  .module-1_local-scope .module-1__child {
+    border: 0
+  }
+  @nest .global-scope & {
+    .module-1 {
+      border: 0
+    }
+    .module-1__child {
+      border: 0
+    }
+  }
+  .module-2 {
+    background: var(#ff9999)/**
+		 * Modifiers (Local Scope)
+		 *//**
+		 * Modifiers (Global Scope)
+		 *//**
+		* Breakpoints
+		*/
+  }
+  .module-2_modifier-name {
+    border: 0
+  }
+  .module-2__child {
+    border: 0
+  }
+  .module-2_local-scope .module-2__child {
+    border: 0
+  }
+  @nest .global-scope & {
+    .module-2 {
+      border: 0
+    }
+    .module-2__child {
+      border: 0
+    }
+  }
+  .module-1 {
+    content: 'this is the theme module version'
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 50%
+  }
+  .module-1 {
+    border: 0
+  }
+  .module-1__child {
+    border: 0
+  }
+  @nest .global-scope & {
+    .module-1 {
+      border: 0
+    }
+  }
+  .module-1_local-scope .module-1__child {
+    border: 0
+  }
+  .module-2 {
+    border: 0
+  }
+  .module-2__child {
+    border: 0
+  }
+  @nest .global-scope & {
+    .module-2 {
+      border: 0
+    }
+  }
+  .module-2_local-scope .module-2__child {
+    border: 0
+  }
+}
+
+@media print {
+  body {
+    font-size: 18px
+  }
+  .module-1 {
+    display: none
+  }
+  .module-2 {
+    display: none
+  }
+}

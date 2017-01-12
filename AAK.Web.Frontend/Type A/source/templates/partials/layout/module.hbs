@@ -1,0 +1,10 @@
+<div class="m {{base.class}}">
+	{{#if module.title}}
+		<div class="m__hd">
+			<h{{module.title.level}} class="m__title{{#if module.title.style}} heading_level-{{moduleTitleStyle}}{{/if}}">{{module.title.text}}</h{{module.title.level}}>
+		</div>
+	{{/if}}
+	<div class="m__ct">
+		{{> (lookup module.data 'template') module.data}}
+	</div>
+</div>

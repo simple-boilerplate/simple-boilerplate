@@ -1,0 +1,44 @@
+/**
+ * General
+ *
+ * @group base
+ */
+
+/* **************************** @media all ********************************** */
+@media all {
+
+	body {
+		background: $color-white;
+		color: $color-black;
+	}
+}
+
+/* **************************** @media screen ******************************* */
+@media screen {
+
+	body {
+		border: 0;
+		display: flex;
+		font-size: 16px;
+		width: 100%;
+
+		@if var($color-red) {
+			color: $color-red;
+		}
+
+		/**
+		* Breakpoints
+		*/
+		@media ($breakpoint-medium) {
+			width: 50%;
+		}
+	}
+}
+
+/* **************************** @media print ******************************** */
+@media print {
+
+	body {
+		font-size: 18px;
+	}
+}
