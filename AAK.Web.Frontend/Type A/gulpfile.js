@@ -11,4 +11,11 @@ requireDir('gulp', {
  *
  * Used for building/developing front-end (HTML, CSS)
  */
-gulp.task('default', ['copy:assets', 'copy:temp', 'html', 'styles', 'watch']);
+gulp.task('default', [
+	'copy:assets',
+	'copy:temp',
+	'styles',
+	'icons',
+	'html',
+	'watch'
+]);
