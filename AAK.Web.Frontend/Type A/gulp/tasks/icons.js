@@ -20,9 +20,15 @@ gulp.task('icons', function() {
 
 	var options = {
 		mode: {
+			inline: true,
 			symbol: {
 				dest: '',
 				sprite: 'icons.hbs'
+			}
+		},
+		shape: {
+			id: {
+				generator: 'icon-%s'
 			}
 		},
 		svg: {
