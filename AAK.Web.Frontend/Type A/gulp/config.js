@@ -30,6 +30,7 @@ module.exports = {
 	SOURCE_ICONS_PATH: './source/icons/',
 	SOURCE_SCRIPTS_PATH: './source/scripts/',
 	SOURCE_STYLES_PATH: './source/styles/',
+	SOURCE_STYLES_TYPE: '.scss',
 	SOURCE_TEMP_PATH: './source/temp/',
 	SOURCE_TEMPLATES_PATH: './source/templates/'
 };
