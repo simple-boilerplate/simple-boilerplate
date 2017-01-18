@@ -14,10 +14,10 @@ module.exports = {
 	/**
 	 * Distribution (Web)
 	 */
-	DIST_ASSETS_PATH: '../../AAK.Web/Assets/Type\ A/assets/',
-	DIST_BASE_PATH: '../../AAK.Web/Assets/Type\ A/',
-	DIST_SCRIPTS_PATH: '../../AAK.WEB/Assets/Type\ A/assets/shared/js/',
-	DIST_THEMES_PATH: '../../AAK.WEB/Assets/Type\ A/assets/themes/',
+	DIST_ASSETS_PATH: '../../AAK.Web/Assets/SiteTypes/AAK/assets/',
+	DIST_BASE_PATH: '../../AAK.Web/Assets/SiteTypes/AAK/',
+	DIST_SCRIPTS_PATH: '../../AAK.WEB/Assets/SiteTypes/AAK/assets/shared/js/',
+	DIST_THEMES_PATH: '../../AAK.WEB/Assets/SiteTypes/AAK/assets/themes/',
 
 	/**
 	 * Source (Web.Frontend)
