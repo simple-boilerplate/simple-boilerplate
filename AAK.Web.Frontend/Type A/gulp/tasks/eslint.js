@@ -18,7 +18,7 @@ var eslint		= require('gulp-eslint');
 gulp.task('eslint', function() {
 
 	var options = {
-		configFile: '.eslintrc.js'
+		configFile: '.eslintrc.json'
 	};
 
 	return gulp.src(config.SOURCE_SCRIPTS_PATH + '**/*')

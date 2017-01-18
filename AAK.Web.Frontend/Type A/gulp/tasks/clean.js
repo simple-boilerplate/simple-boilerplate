@@ -9,7 +9,6 @@ var config	= require('../config.js');
 
 // Dependencies
 var del	= require('del');
-var es = require('event-stream');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var vinylPaths = require('vinyl-paths');
@@ -17,20 +16,26 @@ var vinylPaths = require('vinyl-paths');
 // Clean: Assets
 gulp.task('clean:assets', function() {
 
-	var logFile = function(es) {
-  		return es.map(function(file, cb) {
-    		gutil.log(file.path);
-    		return cb();
-  		});
+	var ignores = ['**/!(*css|*js|themes|shared)/', '!**/(themes|shared)/*'];
+
+	var logFile = function(paths) {
+  		gutil.log(paths);
+		return Promise.resolve();
 	};
 
-	gulp.src(['**/!(*css|*js|themes|shared)/', '!**/(themes|shared)/*'],{cwd:config.BUILD_ASSETS_PATH})
-	// .pipe(logFile(es))
-	.pipe(vinylPaths(del));
 
-	gulp.src(['**/!(*css|*js|themes|shared)/', '!**/(themes|shared)/*'],{cwd:config.DIST_ASSETS_PATH})
-	// .pipe(logFile(es))
-	.pipe(vinylPaths(del));
+	var deleteAsync = function(path){
+		del.sync(path, {force:true});
+		return Promise.resolve();
+	}
+
+	gulp.src(ignores, {cwd:config.BUILD_ASSETS_PATH})
+	.pipe(vinylPaths(logFile))
+	.pipe(vinylPaths(deleteAsync));
+
+	gulp.src(ignores, {cwd:config.DIST_ASSETS_PATH})
+	.pipe(vinylPaths(logFile))
+	.pipe(vinylPaths(deleteAsync));
 
 });
 
