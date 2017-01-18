@@ -8,38 +8,30 @@
 var config	= require('../config.js');
 
 // Dependencies
-var del		= require('del');
-var gulp	= require('gulp');
+var del	= require('del');
+var es = require('event-stream');
+var gulp = require('gulp');
+var gutil = require('gulp-util');
+var vinylPaths = require('vinyl-paths');
 
 // Clean: Assets
 gulp.task('clean:assets', function() {
 
-	//del(config.BUILD_ASSETS_PATH + '**/!(themes|css)');
-	//del([config.BUILD_ASSETS_PATH + '**/*', '!' + config.BUILD_ASSETS_PATH + 'themes/*/css']);
-	//del(['**/*', '!**/themes/*/css'], {cwd: config.BUILD_ASSETS_PATH});
+	var logFile = function(es) {
+  		return es.map(function(file, cb) {
+    		gutil.log(file.path);
+    		return cb();
+  		});
+	};
 
-	// Temp task errors without sync?
-	var ignore = [
-		'shared',
-		'shared/js',
-		'shared/js/*.js',
-		'themes',
-		'themes/*',
-		'themes/*/css',
-		'themes/*/css/*.css'
-	];
+	gulp.src(['**/!(*css|*js|themes|shared)/', '!**/(themes|shared)/*'],{cwd:config.BUILD_ASSETS_PATH})
+	// .pipe(logFile(es))
+	.pipe(vinylPaths(del));
 
-	// Build (Web.Frontend)
-	del.sync('**/*', {
-		cwd: config.BUILD_ASSETS_PATH,
-		ignore: ignore
-	});
+	gulp.src(['**/!(*css|*js|themes|shared)/', '!**/(themes|shared)/*'],{cwd:config.DIST_ASSETS_PATH})
+	// .pipe(logFile(es))
+	.pipe(vinylPaths(del));
 
-	// Distribution (Web)
-	del.sync('**/*', {
-		cwd: config.DIST_ASSETS_PATH,
-		ignore: ignore
-	});
 });
 
 // Clean: HTML

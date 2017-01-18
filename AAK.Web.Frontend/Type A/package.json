@@ -32,7 +32,8 @@
     "handlebars-helpers": "^0.7.5",
     "merge": "^1.2.0",
     "remapify": "^2.1.0",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "vinyl-paths": "^2.1.0"
   },
   "browserify-shim": {
     "jquery": "global:$"
