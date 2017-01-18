@@ -8,35 +8,38 @@
 var config	= require('../config.js');
 
 // Dependencies
-var del	= require('del');
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var vinylPaths = require('vinyl-paths');
+var del		= require('del');
+var gulp	= require('gulp');
 
 // Clean: Assets
 gulp.task('clean:assets', function() {
 
-	var ignores = ['**/!(*css|*js|themes|shared)/', '!**/(themes|shared)/*'];
+	//del(config.BUILD_ASSETS_PATH + '**/!(themes|css)');
+	//del([config.BUILD_ASSETS_PATH + '**/*', '!' + config.BUILD_ASSETS_PATH + 'themes/*/css']);
+	//del(['**/*', '!**/themes/*/css'], {cwd: config.BUILD_ASSETS_PATH});
 
-	var logFile = function(paths) {
-  		gutil.log(paths);
-		return Promise.resolve();
-	};
+	// Temp task errors without sync?
+	var ignore = [
+		'shared',
+		'shared/js',
+		'shared/js/*.js',
+		'themes',
+		'themes/*',
+		'themes/*/css',
+		'themes/*/css/*.css'
+	];
 
+	// Build (Web.Frontend)
+	del.sync('**/*', {
+		cwd: config.BUILD_ASSETS_PATH,
+		ignore: ignore
+	});
 
-	var deleteAsync = function(path){
-		del.sync(path, {force:true});
-		return Promise.resolve();
-	}
-
-	gulp.src(ignores, {cwd:config.BUILD_ASSETS_PATH})
-	.pipe(vinylPaths(logFile))
-	.pipe(vinylPaths(deleteAsync));
-
-	gulp.src(ignores, {cwd:config.DIST_ASSETS_PATH})
-	.pipe(vinylPaths(logFile))
-	.pipe(vinylPaths(deleteAsync));
-
+	// Distribution (Web)
+	del.sync('**/*', {
+		cwd: config.DIST_ASSETS_PATH,
+		ignore: ignore
+	});
 });
 
 // Clean: HTML
