@@ -4,11 +4,6 @@
 module.exports = {
 
 	/**
-	 * Browser Sync
-	 */
-	BROWSER_SYNC_PORT_NUMBER: 9001,
-
-	/**
 	 * Build (Web.Frontend)
 	 */
 	BUILD_ASSETS_PATH: './build/assets/',
@@ -19,7 +14,10 @@ module.exports = {
 	/**
 	 * Distribution (Web)
 	 */
-	DIST_JS_PATH: '../AAK.WEB/Assets/shared/js/',
+	DIST_ASSETS_PATH: '../../AAK.Web/Assets/Type\ A/assets/',
+	DIST_BASE_PATH: '../../AAK.Web/Assets/Type\ A/',
+	DIST_SCRIPTS_PATH: '../../AAK.WEB/Assets/Type\ A/assets/shared/js/',
+	DIST_THEMES_PATH: '../../AAK.WEB/Assets/Type\ A/assets/themes/',
 
 	/**
 	 * Source (Web.Frontend)

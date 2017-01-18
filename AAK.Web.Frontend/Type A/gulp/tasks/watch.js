@@ -24,7 +24,7 @@ gulp.task('watch', ['browser-sync'], function() {
 	gulp.watch('**/*', {cwd: config.SOURCE_ICONS_PATH}, ['icons']);
 
 	// Scripts
-	//gulp.watch('**/*', {cwd: config.SOURCE_SCRIPT_PATH}, ['scripts']);
+	gulp.watch('**/*', {cwd: config.SOURCE_SCRIPTS_PATH}, ['scripts']);
 
 	// Styles
 	gulp.watch('**/*', {cwd: config.SOURCE_STYLES_PATH}, ['styles']);

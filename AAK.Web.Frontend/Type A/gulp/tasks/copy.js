@@ -14,7 +14,8 @@ var gulp	= require('gulp');
 gulp.task('copy:assets', ['clean:assets'], function() {
 
 	return gulp.src(config.SOURCE_ASSETS_PATH + '**/*', {base: config.SOURCE_BASE_PATH})
-		.pipe(gulp.dest(config.BUILD_BASE_PATH));
+		.pipe(gulp.dest(config.BUILD_BASE_PATH))
+		.pipe(gulp.dest(config.DIST_BASE_PATH));
 });
 
 // Copy: Temp (Fonts, Images)

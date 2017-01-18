@@ -18,9 +18,7 @@ var eslint		= require('gulp-eslint');
 gulp.task('eslint', function() {
 
 	var options = {
-		rules: {
-			'no-extra-semi': 2
-        }
+		configFile: '.eslintrc.js'
 	};
 
 	return gulp.src(config.SOURCE_SCRIPTS_PATH + '**/*')

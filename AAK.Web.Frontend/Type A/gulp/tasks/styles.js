@@ -24,7 +24,7 @@ gulp.task('styles', ['stylelint'], function() {
 	// Sass options
 	var options = {
 		includePaths: [config.SOURCE_STYLES_PATH + 'core'],
-		outputStyle: 'expanded'
+		outputStyle: 'compressed'
 	};
 
 	// PostCSS plugins
@@ -49,5 +49,6 @@ gulp.task('styles', ['stylelint'], function() {
 		}))
 
 		// Generate CSS file(s)
-		.pipe(gulp.dest(config.BUILD_THEMES_PATH));
+		.pipe(gulp.dest(config.BUILD_THEMES_PATH))
+		.pipe(gulp.dest(config.DIST_THEMES_PATH));
 });

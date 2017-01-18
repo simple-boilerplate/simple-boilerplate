@@ -14,9 +14,10 @@ var gulp		= require('gulp');
 
 gulp.task('browser-sync', function() {
 	browserSync({
+		open: false,
 		server: {
 			baseDir: config.BUILD_BASE_PATH
 		},
-		port: process.env.PORT || config.BROWSER_SYNC_PORT_NUMBER
+		port: process.env.PORT || 9000
 	});
 });
